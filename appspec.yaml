@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:us-east-1:651783354148:task-definition/my-hello-world-arm64:1"
+        LoadBalancerInfo:
+          ContainerName: "my-hello-world-arm64"
+          ContainerPort: 80
+        PlatformVersion: "LATEST"
