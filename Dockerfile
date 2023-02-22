@@ -1,5 +1,5 @@
 FROM eclipse-temurin:17-jdk-jammy
-EXPOSE 80
+EXPOSE 8080
 ADD target/*.jar app.jar
 ENTRYPOINT ["sh", "-c", "java -jar /app.jar"]
 
