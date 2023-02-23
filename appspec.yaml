@@ -3,8 +3,8 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:651783354148:task-definition/my-hello-world-2:1"
+        TaskDefinition: "arn:aws:ecs:us-east-1:651783354148:task-definition/aws-hello-world-rest-api-2:2"
         LoadBalancerInfo:
-          ContainerName: "my-hello-world"
-          ContainerPort: 8080
+          ContainerName: "aws-hello-world-rest-api-2"
+          ContainerPort: 80
         PlatformVersion: "LATEST"
